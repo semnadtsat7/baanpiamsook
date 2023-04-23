@@ -1,0 +1,130 @@
+/* contact.html */
+body {
+    width: 100hv;
+    position: relative;
+    padding-top: 17vh;
+
+}
+
+main h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    color: #392B47;
+    text-align: center;
+    padding: 4vh
+}
+
+body .bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 27vw;
+    background-color: #392B47;
+    z-index: -10;
+}
+
+body .bg-fixed {
+    width: 100%;
+    position: fixed;
+    z-index: -11;
+    object-fit: con;
+}
+
+.bg-fixed img {
+
+    filter: blur(3px);
+    opacity: 40%;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+
+}
+main .row {
+    margin: 0;
+}
+
+main .phone {
+    text-align: end;
+    padding: 0;
+}
+
+img.line-phone {
+    width: 100%;
+    max-width: 320px;
+}
+
+main .left-box {
+    background-color: #ffffff7e;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    max-height: 638px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+i {
+    margin: 20px;
+}
+main a {
+    color: #392B47;
+    text-decoration: none;
+}
+main .map {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 20pc;
+    margin-bottom: 5%;
+}
+
+main iframe {
+    width: 100%;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.33);
+    width: 100%;
+    margin: 30px 30px 0;
+    border-radius: 30px;
+}
+
+@media (max-width: 991.98px) {
+
+    /* header */
+    main .left-box {
+        font-size: 2vw;
+    }
+
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    main .left-box {
+        width: 80%;
+        margin-bottom: 10%;
+        font-size: 4vw;
+        background-color: #ffffff7e;
+        backdrop-filter: blur(10px);
+    }
+
+    main .phone {
+        text-align: center;
+    }
+}
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    main .left-box {
+        font-size: 4.5vw;
+
+    }
+
+}

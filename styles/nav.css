@@ -1,0 +1,49 @@
+nav {
+  font-family: 'Kanit', sans-serif;
+  background-color: #ffffff7e;
+  /* background: transparent; */
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+}
+
+.nav-logo {
+  width: 2em;
+  padding: 0 5px;
+}
+
+/* ref https://css-tricks.com/css-link-hover-effects/ */
+.nav-item {
+  font-weight: 300;
+  background-image: linear-gradient(to right,
+      #d5a8fe,
+      #4f009e 50%,
+      #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.nav-item:before {
+  content: '';
+  background-image: linear-gradient(to right,
+      #5b0673,
+      #623c80 50%,
+      #4d3188 50%);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+.nav-item:hover {
+  background-position: 0;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}

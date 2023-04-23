@@ -1,0 +1,87 @@
+main {
+  /* background-image: linear-gradient(180deg, rgba(25, 136, 247, 0) 0%, rgba(98, 73, 122, 0.85) 100%); */
+  font-family: "Kanit", sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  padding: 0 20%;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100%;
+  padding: 0 5%;
+  margin-top: 10%;
+}
+
+.box h1 {
+  font-size: 4vw;
+  color: #ccaad5;
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* table*/
+table {
+  background-color: #ffffffc8;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+  text-align: center;
+  font-size: 2vw;
+}
+
+th {
+  color: rgb(90, 52, 126);
+  font-weight: 500;
+}
+
+td {
+  font-weight: 300;
+}
+
+.img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.img-bottom img {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .box h1 {
+    font-size: 7vw;
+
+    text-align: center;
+    padding: 12% 0;
+  }
+
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .box h1 {
+    font-size: 12vw;
+
+    text-align: center;
+    padding: 20% 0;
+  }
+
+}

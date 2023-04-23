@@ -1,0 +1,218 @@
+body {
+    padding-top: 59px;
+    background-color: #fff;
+    height: 6000px;
+    
+}
+header {
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    padding: 10%;
+    height: 100vh;
+    background-image: url('bg7.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    padding: 7% 20%;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+.img-container img {
+    width: 100%;
+    max-width: 700px;
+    padding-left: 50px;
+    z-index: 0;
+}
+.header {
+    text-align: start;
+    z-index: 1;
+}
+h1.header-text {
+    font-size: 4vw;
+    color: #392B47;
+
+  }
+  h1.header-text span {
+    font-size: 3.5vw;
+    color: #62497A;
+  }
+  .header-p {
+    font-weight: 300;
+    font-size: 2vw;
+    color: gray;
+  }
+p.tel-number {
+    font-size: 3vw;
+    color: #353535;
+    margin-top: 7vh;
+}
+/* 
+main */
+main{
+    font-family: 'Kanit', sans-serif;
+}
+main h2 {
+    font-size: 3.5vw;
+    color: #62497A;
+}
+main p ,main li,.list-group-item{
+    color: rgb(89, 89, 89);
+    padding-top: 5vh;
+    font-weight: 300;
+    font-size: 2vw;
+}
+
+main hr{
+    color: #62497A;
+    margin: 8vh 10%;
+    border-width: 7px;
+    width: 80%;
+}
+main img {
+    width: 100%;
+}
+
+
+/* Section1 */
+
+    .section1 img {
+        margin-top: 5vw;
+        padding: 1vw;
+        width: 100%;
+        border-radius: 100pc;
+    }
+
+/* Section3 */
+ .section3 img {
+    border-radius: 3pc;
+ }
+
+ .section5-pic img{
+    border-radius: 100pc;
+    padding: 5%;
+ }
+
+
+
+
+footer {
+    margin:100px auto;
+    text-align: center;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+
+
+/* animation reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+.section3 img {
+    padding: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* header */
+    .header {
+        text-align: center;
+    }
+    h1.header-text {
+        font-size: 9vw;
+    }
+
+    h1.header-text span {
+        font-size: 7vw;
+    }
+      .header-p {
+        font-size: 3vw;
+      }
+      .header .tel-number {
+        font-size: 3.5vh;
+    }
+    .header hr {
+        width: 40%;
+        margin: 6vh 30%;
+    }
+    /* section1 */
+    .section1 p {
+        padding: 0;
+    }
+ }
+ /* // `md` applies to small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) { 
+    .section1 img {
+        margin-top: 30%;
+    }
+    main p ,main li {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px)  { 
+    .img-container {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    opacity: 0.1;
+}
+    h1.header-text {
+        font-size: 14vw;
+        margin: 6vh 0;
+    }
+    h1.header-text span {
+        font-size: 8.5vw;
+    }
+    .header-p {
+        margin-top: 6vh;
+        font-size: 5vw;
+      }
+    header .tel-number {
+        margin: 12vh 0;
+        font-size: 7vw;
+    }
+/* main */
+main h2 ,main ol,main ul{
+    padding: 5% 0;
+    font-size: 8vw;
+    color: #62497A;
+}
+main p ,main li {
+    padding: 0 20px;
+    font-weight: 300;
+    font-size: 5vw;
+}
+}
+
